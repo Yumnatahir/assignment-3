@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 3 - Form</title>
+    <script>
+        function showAlert() {
+            alert("Thank you for visiting!");
+        }
+    </script>
+</head>
+<body>
+    <form method="post" action="#" autocomplete="on" target="_blank">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName"><br><br>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName"><br><br>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"><br><br>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob"><br><br>
+
+            <label for="favColor">Favorite Color</label>
+            <input type="file" name="favColor" id="favColor">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Preferences</legend>
+            <label>Favorite Web Language</label><br>
+            <input type="radio" name="language" value="red"> HTML<br>
+            <input type="radio" name="language" value="blue"> CSS<br>
+            <input type="radio" name="language" value="black"> JavaScript<br><br>
+
+            <label>Devices You Own</label><br>
+            <input type="checkbox" name="device" value="mobile"> Bike<br>
+            <input type="checkbox" name="device" value="tablet"> Car<br>
+            <input type="checkbox" name="device" value="laptop"> Boat<br><br>
+
+            <label for="car">Choose Your Car</label>
+            <select name="car" id="car" multiple>
+                <option value="audi">Volvo</option>
+                <option value="wagon r">Saab</option>
+                <option value="porsche">Ford</option>
+                <option value="ferrari">Audi</option>
+            </select><br><br>
+
+            <label for="time">Available Time</label>
+            <input type="time" name="time" id="time">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Feedback & Settings</legend>
+            <label for="feedback">Feedback</label>
+            <input type="text" name="feedback" id="feedback"><br><br>
+
+            <label for="country">Country Code</label>
+            <input type="text" name="country" id="country"><br><br>
+
+            <label for="satisfaction">Satisfaction level</label>
+            <input type="range" name="satisfaction" id="satisfaction" value="75" oninput="document.getElementById('value').innerText = this.value">
+            <span id="value">75</span><br><br>
+
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age"><br><br>
+
+            <label for="month">Month Selection</label>
+            <input type="month" name="month" id="month">
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <button type="button" onclick="showAlert()">Thank you for visiting!</button>
+    </form>
+</body>
+</html>
